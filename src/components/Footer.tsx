@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type FooterLinkProps = {
   text: string;
   url: string;
@@ -5,15 +7,15 @@ type FooterLinkProps = {
 
 function FooterLink({ text, url }: FooterLinkProps) {
   return (
-    <a className="transition hover:text-teal-500" href={url}>
+    <Link className="transition hover:text-teal-500" href={url}>
       {text}
-    </a>
+    </Link>
   );
 }
 
 export default function Footer() {
   return (
-    <footer className="pt-10 px-8 pb-16 border-t">
+    <footer className="py-6 px-8 border-t-2 border-slate-600">
       <div className="flex justify-between gap-6">
         <div className="flex gap-6 text-sm font-medium text-zinc-600">
           <FooterLink text="Tentang Saya" url="/" />

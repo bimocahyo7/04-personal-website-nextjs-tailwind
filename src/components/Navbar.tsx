@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type NavItemProps = {
@@ -11,9 +12,11 @@ type NavItemProps = {
 function NavItem({ title, url, isSelected }: NavItemProps) {
   return (
     <li>
-      <a className={`block px-3 py-2 transition hover:text-teal-500 ${isSelected ? "text-teal-500" : ""}`} href={url}>
+      <Link
+        className={`block px-3 py-2 transition hover:text-teal-500 ${isSelected ? "text-teal-500" : ""}`}
+        href={url}>
         {title}
-      </a>
+      </Link>
     </li>
   );
 }
