@@ -6,7 +6,6 @@ import Project4 from "../../public/images/Blog Web.png"
 import { SiNextdotjs, SiFigma } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 
-
 export type ProjectItemType = {
     name: string
     url: string

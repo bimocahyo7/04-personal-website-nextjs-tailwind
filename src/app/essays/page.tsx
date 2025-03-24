@@ -1,9 +1,22 @@
+import EssayItem from "@/components/EssayItem";
+import { essay } from "@/data/essay";
+
 export default function Essays() {
   return (
-    <div className="mt-16 px-8">
-      <header>
-        <h1 className="font-bold text-4xl text-zinc-800">Essay</h1>
+    <div className="px-8 bg-[#ffeea8] py-8 min-h-screen">
+      <header className="text-center">
+        <h1 className="font-bold text-4xl text-slate-800">Essay</h1>
+        <p className="text-base font-medium mt-3 text-slate-600">
+          Koleksi artikel dan tutorial seputar pengembangan web modern dan teknologi terkini.
+        </p>
       </header>
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 mt-8">
+          {essay.map((essayData, index) => (
+            <EssayItem key={index} {...essayData} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
