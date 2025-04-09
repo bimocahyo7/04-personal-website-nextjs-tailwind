@@ -25,7 +25,7 @@ export default function Footer() {
           <FooterLink text="Essay" url="/essays" />
         </div>
         <Link href="https://github.com/bimocahyo7" target="_blank">
-          <p className="text-zinc-100">Copyright © {year} Bimo Cahyo Kusumo</p>
+          <p className="text-zinc-100 text-sm">Copyright © {year} Bimo Cahyo Kusumo</p>
         </Link>
       </div>
     </footer>

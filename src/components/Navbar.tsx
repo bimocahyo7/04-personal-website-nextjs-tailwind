@@ -25,7 +25,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-center items-center mx-auto max-w-7xl h-20 bg-slate-700">
+    <div className="flex justify-center items-center mx-auto max-w-7xl h-20 bg-white border-b-4 border-orange-400">
       <nav>
         <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
           <NavItem title="Tentang Saya" url="/" isSelected={pathname === "/"} />
